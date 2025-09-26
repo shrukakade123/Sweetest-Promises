@@ -1,0 +1,268 @@
+[
+  {
+    "model": "events.category",
+    "pk": 1,
+    "fields": {
+      "name": "Catering",
+      "slug": "catering"
+    }
+  },
+  {
+    "model": "events.service",
+    "pk": 2,
+    "fields": {
+      "name": "Royal Banquet Catering",
+      "category": 1,
+      "description": "High quality Royal Banquet Catering for your special events.",
+      "price": 5200
+    }
+  },
+  {
+    "model": "events.service",
+    "pk": 3,
+    "fields": {
+      "name": "Traditional Thali Service",
+      "category": 1,
+      "description": "High quality Traditional Thali Service for your special events.",
+      "price": 5300
+    }
+  },
+  {
+    "model": "events.service",
+    "pk": 4,
+    "fields": {
+      "name": "Buffet Style Catering",
+      "category": 1,
+      "description": "High quality Buffet Style Catering for your special events.",
+      "price": 5400
+    }
+  },
+  {
+    "model": "events.category",
+    "pk": 5,
+    "fields": {
+      "name": "Decoration",
+      "slug": "decoration"
+    }
+  },
+  {
+    "model": "events.service",
+    "pk": 6,
+    "fields": {
+      "name": "Floral Stage Decor",
+      "category": 5,
+      "description": "High quality Floral Stage Decor for your special events.",
+      "price": 5600
+    }
+  },
+  {
+    "model": "events.service",
+    "pk": 7,
+    "fields": {
+      "name": "Lighting Setup",
+      "category": 5,
+      "description": "High quality Lighting Setup for your special events.",
+      "price": 5700
+    }
+  },
+  {
+    "model": "events.service",
+    "pk": 8,
+    "fields": {
+      "name": "Theme Based Decoration",
+      "category": 5,
+      "description": "High quality Theme Based Decoration for your special events.",
+      "price": 5800
+    }
+  },
+  {
+    "model": "events.category",
+    "pk": 9,
+    "fields": {
+      "name": "Music",
+      "slug": "music"
+    }
+  },
+  {
+    "model": "events.service",
+    "pk": 10,
+    "fields": {
+      "name": "DJ Night",
+      "category": 9,
+      "description": "High quality DJ Night for your special events.",
+      "price": 6000
+    }
+  },
+  {
+    "model": "events.service",
+    "pk": 11,
+    "fields": {
+      "name": "Live Band",
+      "category": 9,
+      "description": "High quality Live Band for your special events.",
+      "price": 6100
+    }
+  },
+  {
+    "model": "events.service",
+    "pk": 12,
+    "fields": {
+      "name": "Classical Instrumental",
+      "category": 9,
+      "description": "High quality Classical Instrumental for your special events.",
+      "price": 6200
+    }
+  },
+  {
+    "model": "events.category",
+    "pk": 13,
+    "fields": {
+      "name": "Photography",
+      "slug": "photography"
+    }
+  },
+  {
+    "model": "events.service",
+    "pk": 14,
+    "fields": {
+      "name": "Pre-Wedding Shoot",
+      "category": 13,
+      "description": "High quality Pre-Wedding Shoot for your special events.",
+      "price": 6400
+    }
+  },
+  {
+    "model": "events.service",
+    "pk": 15,
+    "fields": {
+      "name": "Wedding Day Photography",
+      "category": 13,
+      "description": "High quality Wedding Day Photography for your special events.",
+      "price": 6500
+    }
+  },
+  {
+    "model": "events.service",
+    "pk": 16,
+    "fields": {
+      "name": "Cinematic Videography",
+      "category": 13,
+      "description": "High quality Cinematic Videography for your special events.",
+      "price": 6600
+    }
+  },
+  {
+    "model": "events.category",
+    "pk": 17,
+    "fields": {
+      "name": "Venue",
+      "slug": "venue"
+    }
+  },
+  {
+    "model": "events.service",
+    "pk": 18,
+    "fields": {
+      "name": "Luxury Banquet Hall",
+      "category": 17,
+      "description": "High quality Luxury Banquet Hall for your special events.",
+      "price": 6800
+    }
+  },
+  {
+    "model": "events.service",
+    "pk": 19,
+    "fields": {
+      "name": "Open Garden Venue",
+      "category": 17,
+      "description": "High quality Open Garden Venue for your special events.",
+      "price": 6900
+    }
+  },
+  {
+    "model": "events.service",
+    "pk": 20,
+    "fields": {
+      "name": "Beachside Resort Venue",
+      "category": 17,
+      "description": "High quality Beachside Resort Venue for your special events.",
+      "price": 7000
+    }
+  },
+  {
+    "model": "events.category",
+    "pk": 21,
+    "fields": {
+      "name": "Makeup & Styling",
+      "slug": "makeup-&-styling"
+    }
+  },
+  {
+    "model": "events.service",
+    "pk": 22,
+    "fields": {
+      "name": "Bridal Makeup",
+      "category": 21,
+      "description": "High quality Bridal Makeup for your special events.",
+      "price": 7200
+    }
+  },
+  {
+    "model": "events.service",
+    "pk": 23,
+    "fields": {
+      "name": "Groom Styling",
+      "category": 21,
+      "description": "High quality Groom Styling for your special events.",
+      "price": 7300
+    }
+  },
+  {
+    "model": "events.service",
+    "pk": 24,
+    "fields": {
+      "name": "Guest Makeup Packages",
+      "category": 21,
+      "description": "High quality Guest Makeup Packages for your special events.",
+      "price": 7400
+    }
+  },
+  {
+    "model": "events.category",
+    "pk": 25,
+    "fields": {
+      "name": "Entertainment",
+      "slug": "entertainment"
+    }
+  },
+  {
+    "model": "events.service",
+    "pk": 26,
+    "fields": {
+      "name": "Dance Performances",
+      "category": 25,
+      "description": "High quality Dance Performances for your special events.",
+      "price": 7600
+    }
+  },
+  {
+    "model": "events.service",
+    "pk": 27,
+    "fields": {
+      "name": "Stand-up Comedy",
+      "category": 25,
+      "description": "High quality Stand-up Comedy for your special events.",
+      "price": 7700
+    }
+  },
+  {
+    "model": "events.service",
+    "pk": 28,
+    "fields": {
+      "name": "Fireworks Show",
+      "category": 25,
+      "description": "High quality Fireworks Show for your special events.",
+      "price": 7800
+    }
+  }
+]

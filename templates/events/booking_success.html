@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Booking Confirmed - Sweetest Promises{% endblock %}
+
+{% block content %}
+<section class="success" style="text-align:center; padding:50px;">
+  <h1>✔️ Your booking has been successfully confirmed!</h1>
+  <p>We will reach out soon to confirm details.</p>
+  <p>
+    <a class="btn" href="{% url 'core:home' %}">Back to Home</a>
+    <a class="btn primary" href="{% url 'events:services' %}">Explore More Services</a>
+  </p>
+</section>
+{% endblock %}

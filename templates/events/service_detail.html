@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ service.title }} - Sweetest Promises{% endblock %}
+
+{% block content %}
+<section class="service-detail">
+  <h1>{{ service.title }}</h1>
+  <p class="muted">{{ service.description }}</p>
+  <p>
+    <a class="btn primary" href="{% url 'events:book_service' service.pk %}">
+      Book This Service
+    </a>
+  </p>
+</section>
+{% endblock %}

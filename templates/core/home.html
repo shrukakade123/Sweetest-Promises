@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block title %}Home - Sweetest Promises{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Crafting Sweetest Promises for Your Special Day</h1>
+  <p class="tagline">Elegant weddings, stress-free planning, timeless memories.</p>
+  <p><a class="btn primary" href="{% url 'events:services' %}">Explore Services</a></p>
+</section>
+
+<!-- Featured Services -->
+<section class="featured">
+  <h2>Featured Services</h2>
+  <div class="grid">
+    {% for s in featured %}
+      <article class="card">
+        <h3>{{ s.title }}</h3>
+        <p class="muted">{{ s.description|truncatechars:120 }}</p>
+        <p>
+          <a class="btn" href="{% url 'events:service_detail' s.id %}">View</a>
+          <a class="btn primary" href="{% url 'events:book_service' s.id %}">Book Now</a>
+        </p>
+      </article>
+    {% empty %}
+      <p>No services yet.</p>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Popular Packages -->
+<section class="packages-preview">
+  <h2>Popular Packages</h2>
+  <div class="grid">
+    {% for p in packages %}
+      <article class="card">
+        <h3>{{ p.name }}</h3>
+        <p class="price">₹{{ p.price }}</p>
+        <p class="muted">{{ p.description|truncatechars:140 }}</p>
+        <p>
+          <!-- Link to packages page instead of non-existent service link -->
+          <a class="btn primary" href="{% url 'events:packages' %}">View Packages</a>
+        </p>
+      </article>
+    {% empty %}
+      <p>No packages yet.</p>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,1 @@
+web: gunicorn sweetest_promises.wsgi:application --log-file -

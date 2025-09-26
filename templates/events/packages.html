@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Packages - Sweetest Promises{% endblock %}
+
+{% block content %}
+<section>
+  <h1>Packages</h1>
+  <div class="grid">
+    {% for p in packages %}
+      <article class="card">
+        <h3>{{ p.name }}</h3>
+        <p class="price">₹{{ p.price }}</p>
+        <p class="muted">{{ p.description|truncatechars:140 }}</p>
+        <p>
+          <!-- Link package to its related service booking page -->
+          <a class="btn primary" href="{% url 'events:book_service' p.service.id %}">Book Now</a>
+        </p>
+      </article>
+    {% empty %}
+      <p>No packages yet.</p>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

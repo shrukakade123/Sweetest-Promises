@@ -1,0 +1,5 @@
+{% extends 'base.html' %}
+{% block title %}Login - Sweetest Promises{% endblock %}
+{% block content %}
+<div class="auth-card"><h2>Login</h2><form method="post">{% csrf_token %}<label>Username</label><input name="username" required><label>Password</label><input name="password" type="password" required><p><button class="btn primary" type="submit">Login</button></p></form></div>
+{% endblock %}

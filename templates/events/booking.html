@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}Book {{ service.title }} - Sweetest Promises{% endblock %}
+
+{% block content %}
+<div class="booking-page">
+  <div class="booking-form">
+    <h2>Book: {{ service.title }}</h2>
+    <form method="post">
+      {% csrf_token %}
+      
+      <label>Service</label>
+      <input type="text" value="{{ service.title }}" disabled>
+      
+      <label>Package (optional)</label>
+      <select name="package">
+        <option value="">-- Select --</option>
+        {% for p in packages %}
+          <option value="{{ p.id }}">{{ p.name }}</option>
+        {% endfor %}
+      </select>
+      
+      <label>Date</label>
+      <input type="date" name="date" required>
+      
+      <label>Time</label>
+      <input type="time" name="time" required>
+      
+      <label>Special Requests</label>
+      <textarea name="requests" rows="4"></textarea>
+      
+      <p><button class="btn primary" type="submit">Confirm Booking</button></p>
+    </form>
+  </div>
+  
+  <aside class="booking-summary">
+    <h3>Summary</h3>
+    <p>{{ service.title }}</p>
+  </aside>
+</div>
+{% endblock %}

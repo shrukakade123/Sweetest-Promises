@@ -1,0 +1,20 @@
+<header class="topbar">
+  <div class="container navwrap">
+    <div class="brand"><a href="{% url 'core:home' %}">Sweetest <span class="accent">Promises</span></a></div>
+    <button class="menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
+    <nav class="mainnav" id="mainnav" aria-label="Main navigation">
+      <ul class="nav">
+        <li><a href="{% url 'core:home' %}">Home</a></li>
+        <li class="dropdown"><a href="{% url 'events:services' %}">Services ▾</a>
+          <ul class="dropdown-menu">
+            {% for cat in categories %}<li><a href="{% url 'events:services' %}?category={{ cat.id }}">{{ cat.name }}</a></li>{% endfor %}
+          </ul>
+        </li>
+        <li><a href="{% url 'events:packages' %}">Packages</a></li>
+        <li><a href="{% url 'core:about' %}">About Us</a></li>
+        <li><a href="{% url 'core:contact' %}">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="authlinks">{% if user.is_authenticated %}<span class="username">Hi, {{ user.username }}</span> | <a href="{% url 'core:logout' %}">Logout</a>{% else %}<a href="{% url 'core:login' %}">Login</a> / <a href="{% url 'core:signup' %}">Signup</a>{% endif %}</div>
+  </div>
+</header>
